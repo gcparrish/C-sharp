@@ -55,7 +55,7 @@ class Program
         }
         else      
         {
-            letter = " F" ;
+            letter = "n F" ;
         }
         Console.WriteLine($"You got a{letter}{symbol}");
         if (grade >=70)
