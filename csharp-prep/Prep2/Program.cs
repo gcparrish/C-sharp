@@ -19,19 +19,43 @@ class Program
         }
         else if (grade >=80)
         {
-            Console.WriteLine("You got a B.");
+            letter = " B" ;
+            if (grade >= 87)
+            {
+                symbol = "+" ;
+            }
+            else if (grade < 83)
+            {
+                symbol = "-" ;
+            }
         }
         else if (grade >=70)
         {
-            Console.WriteLine("You got a C.");
+            letter = " C" ;
+            if (grade >= 77)
+            {
+                symbol = "+" ;
+            }
+            else if (grade < 73)
+            {
+                symbol = "-" ;
+            }
         }
         else if (grade >=60)
         {
-            Console.WriteLine("You got a D.");
+            letter = " D" ;
+            if (grade >= 67)
+            {
+                symbol = "+" ;
+            }
+            else if (grade < 63)
+            {
+                symbol = "-" ;
+            }
         }
         else      
         {
-            Console.WriteLine("You got an F");
+            letter = " F" ;
         }
         Console.WriteLine($"You got a{letter}{symbol}");
         if (grade >=70)
