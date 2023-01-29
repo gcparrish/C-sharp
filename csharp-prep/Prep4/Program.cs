@@ -11,17 +11,32 @@ class Program
         {
             Console.Write ("Enter a number: ");
             string listEntry = Console.ReadLine ();
-            number = int.Parse (listEntry);
+        number = int.Parse (listEntry);
             numbers.Add(number);
         } while (number != 0);
-        int total = 9;
-        int average = total / numbers.Count;
-        int maximum = 7;
-        Console.Write ("Your total is ");
-        Console.WriteLine (total);
+        numbers.Remove(0);
+        int sum = 0;
+        int maximum = 0;
+        foreach(int num in numbers)
+        {
+            sum += num;
+            if (num > maximum)
+            {
+                maximum = num;
+            }
+        }
+        int average = sum / numbers.Count;
+        
+        Console.Write ("Your sum is ");
+        Console.WriteLine (sum);
         Console.Write ("Your average is ");
         Console.WriteLine (average);
         Console.Write ("Your maximum is ");
         Console.WriteLine (maximum);
+        /*foreach(int num in numbers)
+        {
+            Console.WriteLine (num);
+        }*/
+        
     }
 }
