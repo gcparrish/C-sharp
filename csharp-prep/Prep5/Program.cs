@@ -16,7 +16,7 @@ class Program
     {
         Console.WriteLine ("What is your favorite number?");
         string user_number = Console.ReadLine();
-        
+        int favorite = int.Parse (user_number);
         return favorite;
     }
     static int SquareUserNumber (int favorite)
