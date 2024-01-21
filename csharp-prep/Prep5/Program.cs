@@ -32,9 +32,6 @@ class Program
     static void Main(string[] args)
     {
        DisplayWelcome();
-       PromptUserName();
-       PromptUserNumber();
-       SquareUserNumber(PromptUserNumber());
-       DisplayResult(PromptUserName(), SquareUserNumber(PromptUserNumber()));
+       DisplayResult (PromptUserName(), SquareUserNumber(PromptUserNumber()));
     }
 }
